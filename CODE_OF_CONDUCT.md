@@ -1,0 +1,5 @@
+# Behavior Guidelines
+
+We believe in fostering a positive environment by encouraging behaviors that uplift and support our contributors. This includes demonstrating empathy and kindness towards fellow members, respecting diverse opinions and experiences, and embracing constructive feedback with grace. When mistakes happen, we value taking responsibility, offering sincere apologies, and learning from these experiences. Our focus extends beyond individual interests to prioritize the collective well-being of our community.
+
+However, certain behaviors are unacceptable within our community. These include the use of sexualized language or imagery, engaging in trolling or derogatory comments, and any form of harassment, whether public or private. Additionally, sharing others private information without explicit consent is strictly prohibited. We expect all members to conduct themselves in a manner befitting a professional environment and to refrain from any actions that could cause harm or discomfort to others.
