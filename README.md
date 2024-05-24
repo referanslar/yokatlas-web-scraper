@@ -5,5 +5,6 @@ This project is a web scraper designed to extract bachelor's degree program deta
 # Screens
 
 <div style="float: left">
-    <img src="./assets/1.png" style="width: 60%" />
+    <img src="./assets/1.png" style="width: 80%" />
+    <img src="./assets/2.png" style="width: 80%" />
 </div>
