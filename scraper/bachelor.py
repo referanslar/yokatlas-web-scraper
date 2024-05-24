@@ -39,7 +39,7 @@ class Bachelor(Scraper, Common):
         degree_info = {}
 
         tables = soup.find_all('table', class_='table table-bordered')
-        program_title = soup.find('big').text
+        program_title = soup.find('big').text if soup.find('big') else None
 
         for table in tables:
             tbody = table.find('tbody')
