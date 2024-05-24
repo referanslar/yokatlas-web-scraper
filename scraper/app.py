@@ -1,4 +1,5 @@
 from scraper.bachelor import Bachelor
+from tqdm import tqdm
 import json, os
 
 class App(Bachelor):
@@ -37,13 +38,11 @@ class App(Bachelor):
 
             degree_ids = []
 
-            for university in universities:
+            for university in tqdm(universities):
                 degrees = self.get_degrees_by_university(university[1])
 
                 for degree in degrees:
                     degree_ids.append(degree[1])
-
-                print(f"🟣 Completed: {university[0]}")
 
             with open("./data/degree_ids.json", "w") as f:
                 json.dump(degree_ids, f, indent=4, ensure_ascii=False)
@@ -63,11 +62,9 @@ class App(Bachelor):
 
             degrees = []
 
-            for degree_id in degree_ids:
+            for degree_id in tqdm(degree_ids):
                 degree_info = self.get_degree_info(degree_id)
                 degrees.append(degree_info)
-
-                print(f"🟣 Completed: {degree_info['osymprogramkodu']} - {degree_info['universite']} - {degree_info['program_title']}")
 
             with open("./data/degrees.json", "w") as f:
                 json.dump(degrees, f, indent=4, ensure_ascii=False)
