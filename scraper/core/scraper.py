@@ -20,6 +20,4 @@ class Scraper:
             lambda driver: driver.execute_script("return document.readyState") == "complete"
         )
 
-        time.sleep(5)
-
         return BeautifulSoup(driver.page_source, "html.parser")
