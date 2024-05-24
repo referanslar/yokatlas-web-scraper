@@ -53,24 +53,5 @@ class Bachelor(Scraper, Common):
                 degree_info[self.transform(key)] = value
                 
         degree_info["program_title"] = program_title
-        keys_to_remove = {
-            "okulbirincisikontenjani", 
-            "toplamkontenjan", 
-            "genelkontenjanayerlesen", 
-            "okulbirincisikontenjaninayerlesen", 
-            "toplamyerlesen",
-            "ilkyerlesmeorani",
-            "yerlesipkayityaptirmayan",
-            "ekyerlesen",
-            "boskalankontenjan",
-            "012katsayiileyerlesensonkisininpuani",
-            "012006katsayiileyerlesensonkisininpuani",
-            "2023tavanpuan012",
-            "2022deyerlesip2023deobpsikirilarakyerlesensayisi",
-            "yerlesenlerinortalamaobpsi",
-            "yerlesenlerinortalamadiplomanotu",
-            "012006katsayiileyerlesensonkisininbasarisirasi"
-        }
-
-        filtered_degree_info = {k: v for k, v in degree_info.items() if k not in keys_to_remove}
-        return filtered_degree_info
+        
+        return degree_info
