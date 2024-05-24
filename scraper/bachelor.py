@@ -10,6 +10,9 @@ class Bachelor(Scraper, Common):
         universities = []
 
         for option in soup.select("#univ2 option"):
+            if option.text == "Seç...":
+                continue
+
             universities.append([option.text, option["value"]])
 
         return universities
